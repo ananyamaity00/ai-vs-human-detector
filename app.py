@@ -5,8 +5,8 @@ import requests
 import db_utils
 
 # Set your API URL (update after deploying Flask API on Render)
-API_URL = "https://<your-render-api-domain>/analyze"
-HISTORY_URL = "https://<your-render-api-domain>/history"
+API_URL = "https://ai-vs-human-detector-2.onrender.com"
+HISTORY_URL = "https://ai-vs-human-detector-2.onrender.com"
 
 # Initialize local DB (optional: only if you want Streamlit to also keep local logs)
 db_utils.init_db()
