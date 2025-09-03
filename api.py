@@ -2,13 +2,14 @@
 from flask import Flask, request, jsonify
 from detector_v2 import analyze_text
 import db_utils
+import time
 
 app = Flask(__name__)
 
 # Initialize DB
 db_utils.init_db()
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "AI vs Human Content Detector API is running 🚀"})
 
